@@ -11,6 +11,9 @@ module.exports = {
         greenbarMain5: '#298FBF'
       }
     },
+    fontFamily: {
+      raleway: "'Raleway', sans-serif"
+    }
   },
   safelist: [
     {

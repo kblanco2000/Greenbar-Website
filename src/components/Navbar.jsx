@@ -10,25 +10,29 @@ const Navbar = () => {
         setNav(!nav);
     }
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4  text-black'>
-        <h1 className='w-full text-3xl font-bold text-greenbarMain1'>Greenbar & Artisans</h1>
-        <ul className='hidden md:flex'>
-            <li className='p-4'><Link to='/'>Home</Link></li>
-            <li className='p-4'><Link to='/'>About</Link></li>
-            <li className='p-4'><Link to='/'>Contact</Link></li>
+    <div className='bg-white flex justify-between items-center h-20  mx-auto px-4  text-black'>
+        <h1 className='w-full text-3xl font-raleway font-bold text-black'>Greenbar & Artisans</h1>
+        <ul className='hidden md:flex text-xl right-20'>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>Home</Link></li>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>About</Link></li>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>What We Do</Link></li>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>Our Work</Link></li>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>Contact</Link></li>
         </ul>
 
         <div onClick={handleNav} className='block md:hidden'>
-            {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+            {!nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
         </div>
 
-        <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500' : 'fixed left-[-100%]'}>
-            <h1 className='w-full text-3xl font-bold text-greenbarMain1 m-4'>Greenbar & Artisans</h1>
+        <div className={!nav ? 'md:hidden fixed left-0 top-0 w-[] h-[] border-r border-r-gray-900 bg-white ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <h1 className='w-full text-3xl font-bold text-black m-4'>Greenbar & Artisans</h1>
 
             <ul className='uppercase p-4'>
-                <li className='p-4 border-b border-black'>Home</li>
-                <li className='p-4 border-b border-black'>About</li>
-                <li className='p-4 border-b border-black'>Contact</li>
+                <li className='p-4 border-b border-black font-raleway'>Home</li>
+                <li className='p-4 border-b border-black font-raleway'>About Us</li>
+                <li className='p-4 border-b border-black font-raleway'>What We Do</li>
+                <li className='p-4 border-b border-black font-raleway'>Our Work</li>
+                <li className='p-4 font-raleway'>Contact Us</li>
             </ul>
         </div>
     </div>

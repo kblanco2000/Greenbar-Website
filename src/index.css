@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 
 @layer utilities {
     .carousel-open:checked + .carousel-item {

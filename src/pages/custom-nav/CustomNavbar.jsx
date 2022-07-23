@@ -46,10 +46,10 @@ export const CustomNavbar = () => {
                             <Link to='/about' element={<About />} />
                         </Menu.Item>
                         <Menu.Item tabIndex={0}>
-                            <a>Projects 1</a>
+                            <a>About</a>
                         </Menu.Item>
                         <Menu.Item tabIndex={1}>
-                            <a>Projects 2</a>
+                            <a>Contact Us</a>
                         </Menu.Item>
                     </Menu>
                 </Navbar.Center>
