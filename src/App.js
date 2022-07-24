@@ -16,13 +16,10 @@ function App() {
     <div>
       <Navbar/>
       <div className="relative">
-        <div className="brightness-50 bg-no-repeat bg-cover h-screen w-screen z-10" 
-        style={{ backgroundImage: `url(${image})` }}>          
-        </div>
-        <h1 className="hidden absolute text-white text-3xl text-bold font-raleway z-0 top-4 left-10 md:text-4xl md:top-8 md:block">Construction LLC 1</h1>
-        <h1 className="absolute text-white text-3xl text-bold font-raleway z-0 top-4 left-10 md:text-4xl md:top-8 md:hidden">Construction LLC 2</h1>
+        <div className="bg-black opacity-90 brightness-50 bg-no-repeat bg-cover h-screen w-screen z-10" style={{ backgroundImage: `url(${image})` }}></div>
+        <h1 className="hidden absolute text-white text-3xl text-bold font-raleway md:text-4xl md:block left-[42%] top-[25%]">Construction LLC</h1>
       </div>
-
+      
       <div className="bg-white text-black text-center">Copyright Greenbar & Artisans LLC 2022</div>
     </div>
 
