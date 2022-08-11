@@ -6,9 +6,7 @@ import { CustomNavbar } from '../custom-nav/CustomNavbar'
 
 export const Home = () => {
   return (
-    <div class="bg-blue-300">
-      <Navbar/>
-    </div>
+      <div></div>
     
     
     /*

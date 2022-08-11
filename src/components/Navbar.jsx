@@ -14,23 +14,21 @@ const Navbar = () => {
         <h1 className='w-full text-3xl font-raleway font-bold text-black'>Greenbar & Artisans</h1>
         <ul className='hidden md:flex text-xl right-20'>
             <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>Home</Link></li>
-            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>About</Link></li>
-            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>What We Do</Link></li>
-            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>Our Work</Link></li>
-            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>Contact</Link></li>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/About'>About</Link></li>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/OurWork'>Our Work</Link></li>
+            <li className='p-4 whitespace-nowrap font-raleway'><Link to='/Contact'>Contact</Link></li>
         </ul>
 
         <div onClick={handleNav} className='block md:hidden'>
             {!nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
         </div>
 
-        <div className={!nav ? 'md:hidden fixed left-0 top-0 w-[] h-[] border-r border-r-gray-900 bg-white ease-in-out duration-500' : 'fixed left-[-100%]'}>
-            <h1 className='w-full text-3xl font-bold text-black m-4'>Greenbar & Artisans</h1>
+        <div className={!nav ? 'md:hidden z-10 fixed left-0 top-0 w-[] h-[] border-r border-r-gray-900 bg-white ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <h1 className='w-full text-3xl font-bold text-black m-4 font-raleway'>Greenbar & Artisans</h1>
 
             <ul className='uppercase p-4'>
                 <li className='p-4 border-b border-black font-raleway'>Home</li>
                 <li className='p-4 border-b border-black font-raleway'>About Us</li>
-                <li className='p-4 border-b border-black font-raleway'>What We Do</li>
                 <li className='p-4 border-b border-black font-raleway'>Our Work</li>
                 <li className='p-4 font-raleway'>Contact Us</li>
             </ul>
