@@ -20,31 +20,34 @@ export const Contact = () => {
       });
   };
   return (
-        <div className="bg-[rgb(238,238,238)]">
+        <div className="flex flex-col lg:flex-row bg-no-repeat bg-cover bg-[rgb(238,238,238)] h-screen w-screen z-10">
             <div class='form-control w-full max-w-xs h-[85%] lg:max-w-lg mx-auto my-10 px-6 bg-white'>
-            <label class='label mt-4'>
-                <span class='label-text text-xl text-black'>Please enter your Name</span>
-            </label>
-            <input
-                type='text'
-                placeholder='Your Name'
-                class='input input-bordered max-w-xs lg:max-w-lg bg-slate-200 mb-6'
-            />
-            <label class='label'>
-                <span class='label-text text-xl text-black'>Please enter your email address</span>
-            </label>
-            <input
-                type='text'
-                placeholder='Your email'
-                class='input input-bordered max-w-xs lg:max-w-lg bg-slate-200 mb-6'
-            />
-            <label class='label'>
-                <span class='label-text text-xl text-black'>Please enter your message</span>
-            </label>
-            <textarea class="textarea bg-slate-200 h-80 max-w-xs lg:max-w-lg" placeholder="Your Message"></textarea>
-            <Button className='text-white mb-6  bg-customDarkBlue hover:bg-customMediumBlue mx-auto w-40 mt-10 outline-none lg:mb-0 '>Send</Button>
+                <label class='label mt-4'>
+                    <span class='label-text text-xl text-black'>Please enter your name</span>
+                </label>
+                <input
+                    type='text'
+                    placeholder='Your Name'
+                    class='input input-bordered max-w-xs lg:max-w-lg bg-slate-200 mb-6'
+                />
+                <label class='label'>
+                    <span class='label-text text-xl text-black'>Please enter your email address</span>
+                </label>
+                <input
+                    type='text'
+                    placeholder='Your email'
+                    class='input input-bordered max-w-xs lg:max-w-lg bg-slate-200 mb-6'
+                />
+                <label class='label'>
+                    <span class='label-text text-xl text-black'>Please enter your message</span>
+                </label>
+                <textarea class="textarea bg-slate-200 h-80 max-w-xs lg:max-w-lg" placeholder="Your Message"></textarea>
+                <Button className='text-white mb-6  bg-customDarkBlue hover:bg-customMediumBlue mx-auto w-40 mt-10 outline-none lg:mb-0 '>Send</Button>
             </div>
         </div>
+
+
+
         // <form ref={form} onSubmit={sendEmail}>
         //     <label class="col-form-label">Name</label>
         //     <input type="text" name="user_name"></input>

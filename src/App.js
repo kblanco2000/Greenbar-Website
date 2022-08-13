@@ -30,7 +30,7 @@ function App() {
             </Routes>
           </section>
         </main>
-        
+        <div className="bg-white text-black text-center">Copyright © Greenbar & Artisans LLC 2022</div>
     </div>
 
     

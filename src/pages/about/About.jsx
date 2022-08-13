@@ -9,14 +9,15 @@ export const About = () => {
     <Fragment>
         <div className="relative">
             <div className='flex flex-col lg:flex-row bg-no-repeat bg-cover bg-[rgb(238,238,238)] h-screen w-screen z-10'>
-                <div className='mx-auto w-full p-10 lg:w-1/2 md:pl-40 '>
-                    <h1 className='font-bold my-6 text-3xl text-black font-raleway border-b border-black'>About Us</h1>
-                    <p className='flex font-semibold md:hidden'>
+                <div className='mx-auto w-full p-10 lg:w-1/2 md:pl-40'>
+                    {/* w-1/3 border-b border-black */}
+                    <h1 className='font-bold my-6 text-3xl text-black font-raleway text-center'>About Us</h1>
+                    <p className='flex font-semibold md:hidden text-center'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quod molestiae impedit itaque ullam illo corporis sit
                         nemo debitis optio ad.
                     </p>
-                    <p className='hidden font-semibold md:flex text-black font-raleway'>
+                    <p className='hidden font-semibold md:flex text-black font-raleway text-center'>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Autem voluptate earum quidem ullam nam! Totam
                         expedita eum asperiores quos obcaecati? Consequuntur

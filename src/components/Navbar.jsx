@@ -10,8 +10,8 @@ const Navbar = () => {
         setNav(!nav);
     }
   return (
-    <div className='bg-white flex justify-between items-center h-20  mx-auto px-4  text-black'>
-        <h1 className='w-full text-3xl font-raleway font-bold text-black'>Greenbar & Artisans</h1>
+    <div className='bg-white flex justify-between items-center h-15  mx-auto px-4  text-black'>
+        <h1 className='w-full text-3xl font-raleway font-bold text-black'></h1>
         <ul className='hidden md:flex text-xl right-20'>
             <li className='p-4 whitespace-nowrap font-raleway'><Link to='/'>Home</Link></li>
             <li className='p-4 whitespace-nowrap font-raleway'><Link to='/About'>About</Link></li>
