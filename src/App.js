@@ -9,6 +9,8 @@ import { About } from './pages/about/About';
 import { Home } from './pages/home/Home'
 import { Contact } from './pages/contact/Contact'
 import { OurWork } from './pages/our-work/OurWork'
+import { Footer } from 'react-daisyui';
+
 
 
 import image from "./assets/house.png";
@@ -30,7 +32,10 @@ function App() {
             </Routes>
           </section>
         </main>
-        <div className="bg-white text-black text-center">Copyright © Greenbar & Artisans LLC 2022</div>
+        <div className='fixed bottom-0 w-full'>
+          <Footer className="bg-white text-black text-center justify-center">Copyright © Greenbar & Artisans LLC 2022</Footer>
+        </div>
+        
     </div>
 
     
